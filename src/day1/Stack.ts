@@ -11,7 +11,7 @@ export default class Stack<T> {
   push(item: T): void {
     const node: Node<T> = { value: item, next: this.head };
     this.head = node;
-    this.length++
+    this.length++;
   }
 
   pop(): T | undefined {
